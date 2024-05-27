@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="icon" href="../img/Logo_ITSNCG.ico">
+  <script src="../js/funciones.js" defer></script>
+  <title>Login</title>
+</head>
+<body>
+  <div id="container-principal-centrado">
+    <div class="div-centrado">
+      <img id="logo-grande-formulario" class="logo-grande" src="../img/logo-itsncg-color-principal.svg" alt="">
+    </div>
+    <div id="container-formulario">
+      <div id="container-contenido-formulario">
+        <label class="label-formulario" for="#">Usuario</label><br>
+          <input id="input-usuario" class="input-formulario" type="text">
+        <label id="label-centrado" class="label-formulario" for="#">Contraseña</label>
+          <input id="input-contraseña" class="input-formulario" type="password">
+        <div class="div-centrado">
+          <p>¿Olvidaste tu contraseña?</p>
+          <button id="boton-ingresar" class="boton-standard-1">Ingresar</button>
+        </div>
+      </div>
+    </div>
+    <!-- Contenedor del mensaje de error -->
+    <div id="error-popup" class="hidden">
+      <div class="popup-content">
+        <p>Datos incorrectos, <br> ingresa nuevamente tus datos</p>
+        <button class="boton-standard-2" id="close-popup">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html> 

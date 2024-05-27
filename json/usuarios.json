@@ -1,0 +1,34 @@
+[
+  {
+    "usuario": "admin1",
+    "contraseña": "123",
+    "nombre_completo": "Carlos Pérez",
+    "rol": "Administrador",
+    "area_procedencia": "Redes",
+    "id": "CPTI"
+  },
+  {
+    "usuario": "admin2",
+    "contraseña": "contraseña51",
+    "nombre_completo": "María Gómez",
+    "rol": "Administrador",
+    "area_procedencia": "Recursos Humanos", 
+    "id": "MGHR"
+  },
+  {
+    "usuario": "admin3",
+    "contraseña": "123",
+    "nombre_completo": "Juan López",
+    "rol": "Administrador",
+    "area_procedencia": "Finanzas",
+    "id": "JLFI"
+  },
+  {
+    "usuario": "admin4",
+    "contraseña": "123",
+    "nombre_completo": "Ana Martínez",
+    "rol": "Administrador",
+    "area_procedencia": "Marketing",
+    "id": "AMMA"
+  }
+]

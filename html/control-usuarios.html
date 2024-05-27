@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="icon" href="../img/Logo_ITSNCG.ico">
+  <script src="../js/funciones.js" defer></script>
+  <title>Titulo</title>
+</head>
+<body>
+  <!-- container principal de datos -->
+  <div id="container-principal">
+    <div id="container-barra-lateral">
+      <div id="container-logotipo">
+        <img id="imagen-logotipo" src="../img/Logo_ITSNCG.png" alt="">
+      </div>
+        <div id="container-menu-bl">
+          <button id="ticket-icono" class="barra-lateral-iconos" data-nombre="Tickets"></button>
+          <button id="categoria-icono" class="barra-lateral-iconos" data-nombre="Categorias de tickets"></button>
+          <button id="usuarios-icono" class="barra-lateral-iconos" data-nombre="Control de usuarios"></button>
+          <button id="estadisticas-icono" class="barra-lateral-iconos" data-nombre="Reportes"></button>
+            <div id="container-icono-usuario">
+              <button id="usuario-icono" class="barra-lateral-iconos" data-nombre="Perfil de usuario"></button>
+            </div>
+        </div>
+      <div id="tarjeta-info" class="tarjeta-info"></div>
+    </div>
+    <div id="container-inicio">
+      <div id="container-contenido-tabla-usuarios">
+        <table id="tabla-control-usuarios">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Nombre de usuario</th>
+              <th>Contraseña</th>
+              <th>Área de procedencia</th>
+              <th>Rol</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody id="tabla-usuarios">
+              <!-- Aquí se insertarán las filas de la tabla -->
+          </tbody>
+      </div>
+    </div>
+    <div id="modal" class="modal hidden">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <center><h2>Modificar Usuario</h2></center>
+        <form id="form-modificar-usuario">
+          <label for="id">ID:</label>
+          <input class="input-formulario-2" type="text" id="id" name="id" readonly>
+          <label for="nombre">Nombre de Usuario:</label>
+          <input class="input-formulario-2" type="text" id="nombre" name="nombre">
+          <label for="contrasena">Contraseña:</label>
+          <input class="input-formulario-2" type="password" id="contrasena" name="contrasena">
+          <label for="rol">Rol:</label>
+          <select class="input-formulario-2" id="rol" name="rol">
+            <option value="Administrador">Administrador</option>
+            <option value="Técnico">Técnico</option>
+          </select>
+          <label for="area">Área de Procedencia:</label>
+          <select class="input-formulario-2" id="area" name="area">
+            <option value="Marketing">Marketing</option>
+            <option value="Redes">Redes</option>
+            <option value="Finanzas">Finanzas</option>
+            <option value="Recursos Humanos">Recursos Humanos</option>
+          </select>
+          <center><button class="boton-standard-3" type="submit">Guardar</button></center>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
